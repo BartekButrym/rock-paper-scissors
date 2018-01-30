@@ -47,9 +47,7 @@ function game() {
     function playRound(playerSelection, computerSelection) {
         let result;
         
-        if(playerSelection === 'Rock' && computerSelection === 'Rock' ||
-           playerSelection === 'Paper' && computerSelection === 'Paper' ||
-           playerSelection === 'Scissors' && computerSelection === 'Scissors') {
+        if(playerSelection === computerSelection) {
             result = 'Dead-heat!';
         } else if(playerSelection === 'Rock' && computerSelection === 'Paper') {
             result = 'You Lose! Paper beats Rock';

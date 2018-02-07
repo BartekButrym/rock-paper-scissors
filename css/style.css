@@ -23,8 +23,7 @@
 
 body {
     font-size: 62.5%;
-    background: url(../img/bg.jpg) no-repeat top center;
-    background-size: cover;
+    background: #0f3c51 url(../img/bg.png) top left;
     font-family: 'League Gothic', sans-serif;
 }
 

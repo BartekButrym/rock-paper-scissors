@@ -1,0 +1,194 @@
+@font-face {
+    font-family: 'League Gothic';
+    src: url('leaguegothic-regular-webfont.eot');
+    src: url('leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('leaguegothic-regular-webfont.woff') format('woff'),
+         url('leaguegothic-regular-webfont.ttf') format('truetype'),
+         url('leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sketch_niceregular';
+    src: url('sketch_nice-webfont.eot');
+    src: url('sketch_nice-webfont.eot?#iefix') format('embedded-opentype'),
+         url('sketch_nice-webfont.woff2') format('woff2'),
+         url('sketch_nice-webfont.woff') format('woff'),
+         url('sketch_nice-webfont.ttf') format('truetype'),
+         url('sketch_nice-webfont.svg#sketch_niceregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-size: 62.5%;
+    background: url(../img/bg.jpg) no-repeat top center;
+    background-size: cover;
+    font-family: 'League Gothic', sans-serif;
+}
+
+.row {
+    text-align: center;
+}
+
+p {
+    margin: 0;
+}
+
+h1 {
+    font-family: 'sketch_niceregular', sans-serif;
+    font-weight: normal;
+    color: #fff;
+    text-shadow: 1px 1px #222;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+    transition: opacity .3s ease;
+}
+
+h2 {
+    font-family: 'sketch_niceregular', sans-serif;
+    font-weight: normal;
+    font-size: 4rem;
+    color: #fff;
+    text-shadow: 1px 1px #222;
+}
+
+button.start {
+    cursor: pointer;
+}
+
+.start {
+    background: #E58824;
+    border-radius: .5rem;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-family: 'League Gothic', sans-serif;
+    font-size: 1.6rem;
+    text-shadow: 1px 1px #222;
+    box-shadow: 0 2px #875015;
+    transition: all .1s ease;
+}
+
+.startClick {
+    box-shadow: 0 0;
+    transform: translateY(3px);
+}
+
+#tableScore {
+    width: 12rem;
+    height: 8rem;
+    border: .1rem solid black;
+    background: rgba(0,0,0,0.4);
+    border-radius: .5rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#tableBadge {
+    width: 12rem;
+    height: 2.3rem;
+    border: .1rem solid black;
+    border-top: none;
+    border-radius: .5rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    background: #E58824;
+    font-size: .9rem;
+    color: #fff;
+    text-shadow: 1px 1px #222;
+}
+
+p.colon {
+    font-family: 'sketch_niceregular', sans-serif;
+    font-size: 4rem;
+    color: #fff;
+    text-shadow: 1px 1px #222;
+}
+
+@media (min-width: 544px) {  
+    h1 {font-size:5rem;}
+    p.colon {font-size:5rem;}
+    h2 {font-size:6rem;}
+    #tableScore {height: 8rem;}
+    #tableBadge {height:2.5rem;}
+    #tableBadge > p {font-size:1.5rem;}
+    .start {font-size: 2.4rem; box-shadow: 0 2px #875015;}
+    .startClick {box-shadow: 0 0;}
+}
+
+@media (min-width: 768px) {  
+    h1 {font-size:6rem;}
+    p.colon {font-size:5.5rem;}
+    h2 {font-size:7rem;}
+    #tableScore {height: 10rem;}
+    #tableBadge {height:3rem;}
+    #tableBadge > p {font-size:2.1rem;}
+    .start {font-size: 2.8rem; box-shadow: 0 3px #875015;}
+    .startClick {box-shadow: 0 0;}
+}
+
+@media (min-width: 992px) { 
+    h1 {font-size:6.5rem;}
+    p.colon {font-size:6rem;}
+    h2 {font-size:7.5rem;}
+    #tableScore {height: 11rem;}
+    #tableBadge {height:3.2rem;}
+    #tableBadge > p {font-size:2.3rem;}
+    .start {font-size: 3.5rem; box-shadow: 0 4px #875015;}
+    .startClick {box-shadow: 0 0;}
+}
+
+@media (min-width: 1200px) {  
+    h1 {font-size:7rem;}
+    p.colon {font-size:8rem;}
+    h2 {font-size:8rem;}
+    #tableScore {height: 12rem;}
+    #tableBadge {height:3.5rem;}
+    #tableBadge > p {font-size:2.5rem;}
+    .start {font-size: 3rem; box-shadow: 0 5px #875015;}
+    .startClick {box-shadow: 0 0;}
+}
+
+.btn {
+    padding: .8rem;
+}
+
+.btn:focus, .btn.focus {
+    box-shadow: none;
+  }
+
+.btn-myownstyleofbtn {
+    border: .1rem solid black;
+    background: rgba(0,0,0,0.4);
+    transition: all .1s ease;
+}
+
+@media (min-width: 544px) {  
+    .btn-myownstyleofbtn {border: .1rem solid black;}
+}
+
+@media (min-width: 768px) {  
+    .btn-myownstyleofbtn {border: .2rem solid black;}
+}
+
+@media (min-width: 992px) { 
+    .btn-myownstyleofbtn {border: .3rem solid black;}
+}
+
+@media (min-width: 1200px) {  
+    .btn-myownstyleofbtn {border: .4rem solid black;}
+}
+
+.ctrlClick {
+    transform: scale(1.1);
+    border-color: #E58824;
+    box-shadow: 0 0 1rem #E58824;
+}
+
+.ctrlClick:focus {
+    transform: scale(1.1);
+    border-color: #E58824;
+    box-shadow: 0 0 1rem #E58824;
+}

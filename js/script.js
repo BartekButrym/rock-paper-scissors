@@ -1,3 +1,4 @@
+(function(){
 // ###### START BUTTON ######
 function styleStartButton() {
     this.classList.add('startClick');
@@ -138,3 +139,4 @@ function playerPlay() {
         getScore();
     }
 }
+})();
